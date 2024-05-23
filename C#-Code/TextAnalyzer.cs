@@ -8,8 +8,10 @@
 Console.WriteLine("Enter the text here.");
 string strParagraph = Console.ReadLine();
 
+//Total number of words in a paragraph
 int countWords = strParagraph.Split(' ').Length;
 Console.WriteLine($"Total No of words are : {countWords}");
 
+//Calculating average word Length
 int avgWordLength = strParagraph.Replace(" ", "").Count()/countWords;
 Console.WriteLine($"Average word length is : {avgWordLength}");
