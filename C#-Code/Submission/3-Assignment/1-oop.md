@@ -21,7 +21,7 @@ using System.Threading.Tasks;
 namespace visualstudio_git
 {
     //Base Class
-    internal class BankUser
+    public abstract class BankUser
     {
         //attributes of aclass  accessable within the class only
         private string _firstName;
@@ -45,10 +45,7 @@ namespace visualstudio_git
         }
 
         //base method
-        public void DisplayInfo()
-        {
-            Console.WriteLine($"User Name : {_firstName} {_lastName}");
-        }
+       public abstract void DisplayInfo();
 
 
     }
@@ -69,15 +66,11 @@ namespace visualstudio_git
 
         }
 
-        public void GetEmployeeInfo()
-        {
-
-            base.DisplayInfo();
-            Console.WriteLine($"Employee Id : {_empId}");
-            Console.WriteLine($"Designation : {_designation}");
-
-
-        }
+    public override void DisplayInfo()
+    {
+        Console.WriteLine($"Employee Id : {_empId}");
+        Console.WriteLine($"Designation : {_designation}");
+    }
 
     }
 
@@ -99,14 +92,11 @@ namespace visualstudio_git
         {
             return _customerId;
         }
-        public void GetCustomerInfo()
-        {
-
-            base.DisplayInfo();
-            //Console.WriteLine($"Customer id : {_customerId}");
-                           
-    
-        }
+       public override void DisplayInfo()
+    {
+    Console.WriteLine($"Customer id : {_customerId}");
+  
+    }
 
     }
 }
@@ -234,7 +224,7 @@ Console.WriteLine("_________________________________________");
 ////creating an instance of Customer  class 
 var customer1 = new Customer("Intikhab Hussain","Bhat",43,"intikhabh@gmail.com","Nowgam By-Pass Srinagar",8491021591,1);
 //Getting Customer Details
-customer1.GetCustomerInfo();
+customer1.DisplayInfo();
 
 ////creating an instance of Account class 
 var acountdetails = new Accounts("SB-123", "Saving Account", 5000, customer1.GetCustId());
@@ -264,7 +254,7 @@ Console.WriteLine("_________________________________________");
 var empDetails = new Employee("Javaid","Ahmad",38,"abc@gmail.com","Natipora Srinagar",1234567890,101,"Accountant");
 
 //Gets the employee details
-empDetails.GetEmployeeInfo();
+empDetails.DisplayInfo();
 
 ```
 ## output
