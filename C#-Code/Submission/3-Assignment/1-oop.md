@@ -267,3 +267,6 @@ var empDetails = new Employee("Javaid","Ahmad",38,"abc@gmail.com","Natipora Srin
 empDetails.GetEmployeeInfo();
 
 ```
+## output
+
+![oop](image.png)
