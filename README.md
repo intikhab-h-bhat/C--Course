@@ -18,7 +18,15 @@ Learning C# basics fom basic syntax to working with data types like strings, num
 9. Others (Linq, Exception Handling, File I/O, etc.)(resources/)
 
 # Programs
+
 ## Program To Swap two numbers
 
 ## Extracting First and Last Names
  Write a C# program that prompts the user for their full name and then extracts their first and last names.
+ 
+## Write a C# program that sets up a basic user profile by collecting name, email, and phone number using different data types.
+
+## Write a C# program that modifies a given string by:
+* Removing leading and trailing whitespace characters.
+* Converting the entire string to uppercase or lowercase (user's choice).
+* Extracting a specified substring based on user input (start and end indices).
