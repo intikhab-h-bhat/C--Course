@@ -1,12 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Welcome To C#!");
 
-// string firstName="   Intikhab";
-// string lastName="Bhat         ";
-// lastName=lastName.Replace(lastName,"Hussain Bhat");
-// Console.WriteLine($"My full name is {firstName.TrimStart()}  {lastName.TrimEnd()}");
-decimal a=21.5M;
-decimal b=21.2M;
-decimal c=checked(a+b);
-Console.WriteLine("addition");
-Console.Write(c);
+//Console Input output
+
+Console.Write("Enter your Name: ");
+string name=Console.ReadLine();
+Console.Write("Enter Your age: ");
+string age=Console.ReadLine();
+
+Console.Write("Your name is ");
+Console.Write(name);
+Console.Write(" and your age is ");
+Console.Write(age);
