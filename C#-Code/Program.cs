@@ -1,31 +1,48 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Globalization;
+using System.IO.Compression;
+
 Console.WriteLine("Welcome To C#!");
 
 //switch statement
 
-Console.WriteLine("Enter the day of the week:");
+// Console.WriteLine("Enter the text yoyu want to repeat:");
+// string message= Console.ReadLine(); 
 
-int day=Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(day);
+// Console.WriteLine("How many times you want to repeat the text");
+// int count=Convert.ToInt32(Console.ReadLine());
 
-switch (day){
-    case 1:Console.WriteLine("Monday"); 
-        break;
-    case 2:Console.WriteLine("Tuesday"); 
-        break;
-    case 3:Console.WriteLine("Wednesday"); 
-        break;
-    case 4:Console.WriteLine("Thursday"); 
-        break;
-    case 5:Console.WriteLine("Friday"); 
-        break;
-    case 6:Console.WriteLine("Saturday"); 
-        break;        
-    case 7:Console.WriteLine("Sunday"); 
-        break;
-    default:Console.WriteLine("Enter the number between 1 and 7"); 
-        break;
-}
+// if(count==0){
+//     Console.WriteLine("Enter the value greater than 0");
+// }
+// else
+// {
+//     for(int i=0; i<count;i++)
+//     {
+//     Console.WriteLine(i);
+//     Console.WriteLine(message);
+//     }  
+// }
+
+//While loop
+// Console.WriteLine("Enter the number");
+// int j=Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("");
+// while(j==7){
+//     Console.WriteLine("Hello");
+// }
+
+//Do while
+int k=5;
+int z=7;
+do{
+Console.WriteLine("Welcome");
+k++;
+}while(k<z);
+
+
+
+
 
 
 
