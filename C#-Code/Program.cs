@@ -33,17 +33,46 @@ Console.WriteLine("Welcome To C#!");
 // }
 
 //Do while
-int k=5;
-int z=7;
-do{
-Console.WriteLine("Welcome");
-k++;
-}while(k<z);
+// int k=5;
+// int z=7;
+// do{
+// Console.WriteLine("Welcome");
+// k++;
+// }while(k<z);
+
+//Conditional operator
+// int age = Convert.ToInt32(Console.ReadLine());
+// string result=age>0? "Valid":"InValid";
+// Console.WriteLine(result);
+
+//Number format
+// double x=-10D/3D;
+// Console.WriteLine(string.Format("10$/3$ is ${0:0}",x));
+// Console.WriteLine(string.Format("{0:0.0}",x));
+// Console.WriteLine(string.Format("{0:0.00}",x));
+// Console.WriteLine(x.ToString("C"));
+// Console.WriteLine(x.ToString("C1"));
+// Console.WriteLine(x.ToString("C2"));
+// Console.WriteLine(x.ToString("C2"));
+// Console.WriteLine(x.ToString("C",CultureInfo.CreateSpecificCulture("en-GB")));
 
 
+// using  Tryparse
+
+bool success = true;
+while (success){
+string x = Console.ReadLine();
 
 
+if(int.TryParse(x, out int num)){
+   
+   success=false;
+    Console.WriteLine(num);
+}
+else{
+    Console.WriteLine("Failed to convert");
+}
 
-
+}
 
 
