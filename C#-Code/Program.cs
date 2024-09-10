@@ -57,22 +57,56 @@ Console.WriteLine("Welcome To C#!");
 // Console.WriteLine(x.ToString("C",CultureInfo.CreateSpecificCulture("en-GB")));
 
 
-// using  Tryparse
+// Console.WriteLine("Enter the number");
+// int num =Convert.ToInt32(Console.ReadLine());
 
-bool success = true;
-while (success){
-string x = Console.ReadLine();
+// for (int i = 1;i<=10;i++){
+//    // Console.WriteLine(Convert.ToString(num) + " x " + Convert.ToString(i)+ " = " + Convert.ToString(num*i));
+// Console.WriteLine("{0} X {1} = {2}",num,i,num*i);
 
+// }
 
-if(int.TryParse(x, out int num)){
-   
-   success=false;
-    Console.WriteLine(num);
-}
-else{
-    Console.WriteLine("Failed to convert");
-}
+//Fiz Buzz
 
-}
+// bool threeDiv=false;
+// bool fiveDiv=false;
+// for(int i = 1;i<=15;i++){
 
+//     threeDiv=(i%3==0);
+//     fiveDiv=(i%5==0); 
 
+//     if(threeDiv && fiveDiv)
+//     {
+//         Console.WriteLine("FizBuzz");
+//     }
+//     else if(threeDiv) {
+//         Console.WriteLine("Fizz");
+//     }
+//     else if (fiveDiv) {
+//         Console.WriteLine("Buzz");
+//     }
+//     else {
+//         Console.WriteLine(i);
+//     }
+// }
+
+// string interpolation and conacatination
+// string[] names={"A ", "B ", "C ",};
+// var contcatNames=string.Concat(names);
+// Console.WriteLine(contcatNames);
+
+// Console.WriteLine("Enter your name");
+// string name=Console.ReadLine();
+
+// if(!name.Equals(string.Empty))
+// {
+//     Console.WriteLine($"Your name is : {name}");
+
+// }
+// else{
+//     Console.WriteLine("You did nnot enter any thing");
+// }
+
+string x="Hello";
+string y="Hello";
+Console.WriteLine(x.Equals(y));
