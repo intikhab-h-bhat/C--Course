@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.ComponentModel;
 using System.Globalization;
 using System.IO.Compression;
 
@@ -107,6 +108,52 @@ Console.WriteLine("Welcome To C#!");
 //     Console.WriteLine("You did nnot enter any thing");
 // }
 
-string x="Hello";
-string y="Hello";
-Console.WriteLine(x.Equals(y));
+// string x="Hello";
+// string y="Hello";
+// Console.WriteLine(x.Equals(y));
+string message="C# is awasome";
+
+// for (int i=0; i<message.Length;i++){
+
+//     Console.Write(message[i]);
+//     System.Threading.Thread.Sleep(100);
+    
+
+// }
+// Console.WriteLine();
+// Console.WriteLine(message.Contains("s"));
+
+// bool contains=false;
+// for(int i=0; i<message.Length;i++){
+
+//     if(message[i].Equals('C'))
+//     {
+//        contains=true;
+//         Console.WriteLine(contains);
+//     }
+// }
+
+// string name="Hello";
+
+// if(!string.IsNullOrEmpty(name)){
+//     Console.WriteLine("Not empty");
+// }
+
+Console.WriteLine("Enter the string");
+string? text=Console.ReadLine();
+
+for(int i=0; i<text.Length;i++){
+    Console.Write(text[i]);
+}
+Console.WriteLine();
+for(int j=text.Length-1; j>=0;j--){
+
+    
+    Console.Write(text[j]);
+
+ }
+
+ for (int k = text.Length - 1; k >= 0 ; k--)
+ {
+    
+ }
