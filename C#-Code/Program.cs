@@ -1,17 +1,41 @@
-﻿int num=7;
-int length=5;
-int[] numbers=new int[length];
+﻿
 
-for(int i=1;i<=length; i++) {
+Console.WriteLine(Add(5,5));
 
-    numbers[i-1]=i*num;
-}
+int i= ReadInt("Angle.");
+int j= ReadInt("number");
 
-for(int i=0;i<length;i++)
+int firstNum=ReadInt("First Number");
+int secondNum=ReadInt("Second Number");
+
+int result=Add(firstNum,secondNum);
+Console.WriteLine(result);
+
+string name=ReadString("Enter your name");
+int age=ReadInt("age");
+string details=UserDetails(name,age);
+Console.Write(details);
+
+static string UserDetails(string name,int age)
 {
-    Console.Write($"{numbers[i]} ");
+    return $" Hello my name is {name} and my age is {age}";
 }
-Console.WriteLine();
-foreach(int i in numbers) {
-    Console.Write($"{i} ");
+
+
+static string ReadString(string str){
+     Console.WriteLine($"Enter the {str} ");
+        return  Console.ReadLine();
+}
+
+static int ReadInt(string message){
+
+    Console.WriteLine($"Enter the {message} ");
+    int readnNum=Convert.ToInt32(Console.ReadLine());
+    return readnNum;
+}
+
+
+
+static int Add(int a,int b){
+    return a + b;
 }
